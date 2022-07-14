@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+  <head>
+  <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PROYECTO WEB CERTUSS</title>
+  <!-- Libreria Estilos del Formulario -->
+	<link rel="stylesheet" href="css/estilosFormulario.css" />
+  <script src="js/form.js"></script>
+  </head>
+  <body>
+  <!-- Colocar el Nuevo Menu-->
+  <header>
+   <form action="../formulario_05/enviar.php" method="POST" class="contact-form" onsubmit="return validar(this);"> 				
+			<div class="formulario">
+            			<div class="column">
+                        	<h2>comunicate con CERTUS_GAMING</h2> 
+
+                        	<label for="nombre" style="color:white ;"> Nombre <span>(requerido)</span></label>
+                            <input type="text" name="nombre" id="nombre" class="form-input"
+                            onBlur="revisar(this)">
+                            
+                            <label for="email" style="color:white ;">  Email <span>(requerido)</span></label>
+                            <input type="text" name="email" id="email" class="form-input" onBlur="revisar(this)">
+                            
+                            <label for="asunto" style="color:white ;">Mensaje <span>(requerido)</span></label>
+                          	 <textarea name="mensaje" id="mensaje" class="form-input" ></textarea>
+                         
+                			 <input   class="form-btn" type="submit" value="Enviar mensaje">
+             				 </div>  
+  </form>
+
+  <div class="wrapper">
+    <div class="container"></div>
+  </div>
+  <script>
+    let container = document.querySelector(".container");
+    let setGreeting = setInterval(function () {
+      let hours = new Date().getHours();
+      let minutes = new Date().getMinutes();
+      let greeting =
+        hours >= 5 && hours < 12
+          ? "Buenos días"
+          : hours >= 12 && hours < 18
+          ? "Buenas tardes"
+          : "Buenas noches";
+      container.innerHTML = `
+    <h3>${hours}:${minutes}</h3>
+    <h1>${greeting}</h1>`;
+    }, 1000);
+  </script>
+  </header>
+</body>
+</html>

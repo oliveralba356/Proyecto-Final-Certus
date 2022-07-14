@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body
+{
+    background: url(../img/fondologin.webp) center top no-repeat;
+}
+.cuerpo
+{
+background: white;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.cuerpo h1
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #111;
+}
+.cuerpo input
+{
+    display: block;
+    margin: 40px;
+    height: 30px;
+    width: 270px;
+    font-family: 'Monterrat';
+    outline: none;
+    border: 4px gray solid ;
+    border-radius: 12px;
+}
+.enlaces
+{
+
+    height: 80px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    top: 26em;
+    left: 40%;
+    transition: 0.5s;    
+
+}
+button
+{
+    background: #7B7D7D;
+    color: #f1f1f1;
+    font-weight: 900;
+    border: none;
+    position: static ;
+    border-radius: 12px;
+    height: 35px;
+    width: 360px;
+    margin: 0px 20px;
+    transition: 0.4s;
+}
+button:hover
+{
+    border: 3px solid #000;
+}
+button:active
+{
+    transition: .1s;
+    background:#D0D3D4 ;
+    color: #000;
+    border: 3px solid #000;
+}
+button
+{
+    height: 35px;
+    width: 360px;
+    background: linear-gradient(45deg, rgb(63, 61, 61), rgb(209, 209, 209), rgb(44, 44, 44), rgb(99, 99, 99));
+    background-size: 400% 400%;
+    animation: cambiar 10s ease infinite;
+}
+@keyframes cambiar
+{
+    0%{
+        background-position: 0 50% ;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.enlaces p
+{
+    padding: 5px;
+    color: #000;
+    font-weight: 600;
+}
+.enlaces a
+{
+    color:#000 ;
+    text-decoration: none;
+}
+.enlaces a:hover
+{
+    color: #7B7D7D;
+    text-decoration: underline;
+}
+@media (max-width: 901px)
+{
+    .enlaces
+    {
+        position: relative;
+        top: 400px;
+        left: 5%;
+    }
+    .cuerpo
+    {
+        position: absolute;
+        left: 0;
+        top: 10%;
+        width: 300px;
+        height: 450px;
+    }
+    .cuerpo input
+    {
+        width: 220px;
+    }
+    button
+    {
+        width: 260px;
+    }
+}

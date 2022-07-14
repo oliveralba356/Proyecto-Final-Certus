@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+*::selection
+{
+    background: #7B7D7D;
+    color: white;
+}
+body
+{
+    background: url(../img/fondologin.webp) center top no-repeat;
+}
+.cuerpo
+{
+    background: white;
+    height: 500px;
+    width: 400px;
+    position: relative;
+    left: 40%;
+    top: 5em;
+    border-radius: 12px;
+}
+.cuerpo h1
+{
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    color: #111;
+
+}
+.cuerpo input
+{
+    display: block;
+    margin: 40px;
+    height: 30px;
+    width: 270px;
+    font-family: 'Monterrat';
+    outline: none;
+    border: 4px gray solid ;
+    border-radius: 12px;
+}
+#check
+{
+    position: absolute;
+    right: 50%;
+    bottom: 28%;
+    height: 20px;
+}
+.cuerpo label
+{
+    color: #111;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+}
+.enlaces
+{
+
+    height: 80px;
+    display: block;
+    position: relative;
+    margin: 10px;
+    bottom: 27px;
+    left: 40%;
+    transition: 0.5s;    
+
+}
+button
+{
+    background: #7B7D7D;
+    color: #f1f1f1;
+    font-weight: 900;
+    border: none;
+    position: static ;
+    border-radius: 12px;
+    height: 35px;
+    width: 360px;
+    margin: 0px 20px;
+    transition: 0.4s;
+}
+button:hover
+{
+    background:#D0D3D4 ;
+    color: #000;
+    border: 3px solid #111;
+}
+.enlaces p
+{
+    padding: 5px;
+    color: #000;
+    font-weight: 600;
+}
+.enlaces a
+{
+    font-size: .9em;
+    color:#000 ;
+    text-decoration: none;
+
+}
+.enlaces a:hover
+{
+    color: #7B7D7D;
+    text-decoration: underline;
+}
+
+@media (max-width: 901px)
+{
+    .cuerpo
+    {
+        position: relative;
+        left: 10%;
+    }
+    .enlaces
+    {
+        position: relative;
+        left: 10%;
+    }
+}
+@media (max-width: 601px)
+{
+    .cuerpo
+    {
+        height: 450px;
+        width: 350px;
+        position: relative;
+        left: 0;
+
+    }
+    .enlaces
+    {
+        position: relative;
+        left: 2%;
+    }
+    .cuerpo input
+    {
+        position: relative;
+        left: -6%;
+        margin: 30px;
+        height: 20px;
+        width: 190px;
+    }
+    button
+    {
+        position: relative;
+        top: -10%;
+        margin: auto;
+        height: 30px;
+        width: 280px;
+    }
+    #check
+    {
+        position: relative;
+        left: -30%;
+        top: -7%;
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="icon" href="../img/icono de login register.png">
+
+    <link rel="stylesheet" href="../css/loginregistrarse.css">
+</head>
+<body>
+    <div class="cuerpo">
+    <h1>Registrarse</h1>
+    <input type="email" placeholder="Ingrese correo" id="usuario" >
+    <input type="password" placeholder="Ingrese contraseña" id="contraseña">
+    <input type="password" placeholder="confirme nueva contraseña" id="contraseña"> <br>
+    <label for="">Aceptar términos y condiciones</label>
+    <input type="checkbox" id="check">
+    <a href="#"><button class="btn" type="submit" onclick="crearcuenta()">Registrarse</button> </a>
+</div>
+    <div class="enlaces">
+        <a href="login.html" style="font-size:18px ;">¿Ya tienes una cuenta?</a><br>
+        <a href="#">¿Necesitas ayuda?</a>
+        <p>O tambien puedes revisar nuestros</p> <a href="#">Términos y condiciones</a> 
+    </div>
+    <script>
+        function crearcuenta()
+        {
+            var user, pass
+            var user = document.getElementById("usuario").value;
+            var pass = document.getElementById("contraseña").value;
+            if(user == "jordyalba@gmail.com" && pass =="1234567"){
+                window.location="../paginas/login.html"
+            }
+            else{
+                alert("Agregue datos validos");
+            }
+        
+        }
+        </script>
+</body>
+</html>
